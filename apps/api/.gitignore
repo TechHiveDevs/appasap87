@@ -1,0 +1,9 @@
+node_modules
+.env
+dist
+
+# exclude everything inside assets
+assets/avatars/*
+
+# exception to the rule
+!assets/avatars/.gitkeep

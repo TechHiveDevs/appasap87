@@ -1,0 +1,243 @@
+
+  /dndnode1667920492099:
+    get:
+     summary: Get all dndnode1667920492099s
+     tags: [dndnode1667920492099]
+     responses:
+       200:
+        schema:
+          $ref: '#/components/schemas/dndnode1667920492099'
+ 
+    post:
+      summary: Create dndnode1667920492099
+      tags: [dndnode1667920492099]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/dndnode1667920492099'
+      responses:
+        201:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920492099'
+ 
+  /dndnode1667920492099/{id}:
+    get:
+      summary: Get dndnode1667920492099 by id
+      tags: [dndnode1667920492099]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920492099'
+ 
+    put:
+      summary: Edit dndnode1667920492099
+      tags: [dndnode1667920492099]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920492099'
+      requestBody:
+        content:
+            application/json:
+              schema:
+               $ref: '#/components/schemas/dndnode1667920492099'
+ 
+    delete:
+      summary: Delete dndnode1667920492099
+      tags: [dndnode1667920492099]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920492099'
+
+  /dndnode1667920489982:
+    get:
+     summary: Get all dndnode1667920489982s
+     tags: [dndnode1667920489982]
+     responses:
+       200:
+        schema:
+          $ref: '#/components/schemas/dndnode1667920489982'
+ 
+    post:
+      summary: Create dndnode1667920489982
+      tags: [dndnode1667920489982]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/dndnode1667920489982'
+      responses:
+        201:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920489982'
+ 
+  /dndnode1667920489982/{id}:
+    get:
+      summary: Get dndnode1667920489982 by id
+      tags: [dndnode1667920489982]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920489982'
+ 
+    put:
+      summary: Edit dndnode1667920489982
+      tags: [dndnode1667920489982]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920489982'
+      requestBody:
+        content:
+            application/json:
+              schema:
+               $ref: '#/components/schemas/dndnode1667920489982'
+ 
+    delete:
+      summary: Delete dndnode1667920489982
+      tags: [dndnode1667920489982]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dndnode1667920489982'
+
+  /user:
+    get:
+     summary: Get all users
+     tags: [user]
+     responses:
+       200:
+        schema:
+          $ref: '#/components/schemas/user'
+ 
+    post:
+      summary: Create user
+      tags: [user]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        201:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user'
+ 
+  /user/{id}:
+    get:
+      summary: Get user by id
+      tags: [user]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user'
+ 
+    put:
+      summary: Edit user
+      tags: [user]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user'
+      requestBody:
+        content:
+            application/json:
+              schema:
+               $ref: '#/components/schemas/user'
+ 
+    delete:
+      summary: Delete user
+      tags: [user]
+      parameters:
+        - in: path
+          name: id
+      responses:
+        202:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user'
+
+  components:
+    schemas:
+  
+      dndnode1667920492099:
+        type: object
+        properties:
+      
+          id:
+            type: string
+          dndnode1667920489982:
+            type: string
+      dndnode1667920489982:
+        type: object
+        properties:
+      
+          id:
+            type: string
+          user:
+            type: string
+      user:
+        type: object
+        properties:
+      
+          id:
+            type: number
+          name:
+            type: string
+          email:
+            type: string
+          gender:
+            type: string
+          age:
+            type: number
+          password:
+            type: string
